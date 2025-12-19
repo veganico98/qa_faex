@@ -3,7 +3,7 @@ describe('Cenário de Teste: Login na Aplicação', () => {
     cy.visit('https://www.saucedemo.com/');
   });
 
-    it('Deve ser capaz de logar com credenciais válidas', () => {
+    it('Deve ser capaz de realizar todo o processo de compra', () => {
         //Realizando login válido
         cy.get('[data-test="username"]').type('standard_user');
         cy.get('[data-test="password"]').type('secret_sauce');
