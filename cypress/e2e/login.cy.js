@@ -14,7 +14,7 @@ describe('Cenário de Teste: Login na Aplicação', () => {
     cy.get('[data-test="error-button"]').click();
   });
 
-  it('Deve ser capaz de bloquear um acesso com login correto e a senha incorreta', () => {
+  it('Deve ser capaz de bloquear um acesso com usuário correto e a senha incorreta', () => {
     cy.get('[data-test="username"]').type('secret_sauce');
     cy.get('[data-test="password"]').type('1234');
     cy.get('[data-test="login-button"]').click();
